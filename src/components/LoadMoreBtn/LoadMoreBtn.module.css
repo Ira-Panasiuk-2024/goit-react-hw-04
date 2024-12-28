@@ -1,0 +1,23 @@
+.loadMoreBtn {
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 0.6em;
+  color: black;
+  display: flex;
+  align-self: center;
+  line-height: 1;
+  margin: 0 auto;
+  padding: 1em 2.4em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  transition: background-color 300ms ease-in-out,
+    color 300ms ease-in-out, border 300ms ease-in-out;
+
+  &:hover {
+    color: #fff;
+    background-color: blue;
+    border: 2px solid blue;
+  }
+}

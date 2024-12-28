@@ -1,0 +1,12 @@
+.galleryList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.galleryItem {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}

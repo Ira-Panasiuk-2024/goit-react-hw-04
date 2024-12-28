@@ -1,0 +1,26 @@
+.imageBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 200px;
+
+  border: 4px solid #fff;
+  border-radius: 16px;
+  overflow: hidden;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.imageCard {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.imageCard:hover {
+  transform: scale(1.05);
+}
