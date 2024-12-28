@@ -1,19 +1,39 @@
-import ImageCard from "../ImageCard/ImageCard";
-import style from "./ImageGallery.module.css";
+// import ImageCard from "../ImageCard/ImageCard";
+// import style from "./ImageGallery.module.css";
+
+// const ImageGallery = ({ images, onImageClick }) => {
+//   return (
+//     <ul className={style.galleryList}>
+//       {images.map((image) => (
+//         <li
+//           key={image.id}
+//           className={style.galleryItem}
+//           onClick={() => onImageClick(image.urls.regular)}
+//         >
+//           <ImageCard image={image} />
+//         </li>
+//       ))}
+//     </ul>
+//   );
+// };
+// export default ImageGallery;
+
+import ImageCard from '../ImageCard/ImageCard';
+import style from './ImageGallery.module.css';
 
 const ImageGallery = ({ images, onImageClick }) => {
   return (
     <ul className={style.galleryList}>
-      {images.map((image) => (
-        <li
-          key={image.id}
-          className={style.galleryItem}
-          onClick={() => onImageClick(image.urls.regular)}
-        >
-          <ImageCard image={image} />
+      {images.map(image => (
+        <li key={image.id} className={style.galleryItem}>
+          <ImageCard
+            image={image}
+            onClick={() => onImageClick(image.urls.regular)}
+          />
         </li>
       ))}
     </ul>
   );
 };
+
 export default ImageGallery;
